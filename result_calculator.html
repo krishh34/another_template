@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            padding: 10px;
+        }
+        form{
+            padding: 10px;
+        }
+        #k1{
+            text-align: center;
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function calculate(){
+        var A=document.getElementById("j1").value;
+        var B=document.getElementById("j2").value;
+        var C=document.getElementById("j3").value;
+        var D=document.getElementById("j4").value;
+        var E=document.getElementById("j5").value;
+        var F=document.getElementById("j6").value;
+        var total=A + B + C + D + E + F;
+        var perc=(total*100/600);
+
+        document.write("total marks = ",+total)
+
+    
+
+        }
+    </script>
+    <h1>CHECK YOUR RESULT HERE!</h1>
+    <form>
+        ENGLISH : <input type="text" name="" id="j1">
+        HINDI:  <input type="text" name="" id="j2">
+        MATHS : <input type="text" name="" id="j3">
+        S.S.T : <input type="text" name="" id="j4">
+        SCIENCE : <input type="text" name="" id="j5">
+        HISTORY : <input type="text" name="" id="j6">
+        <input type="button" id="k1" value="CHECK" onclick="calculate()"> 
+        <p id="jk"></p>
+        <p id="l1"></p>
+    </form>
+</body>
+</html>
